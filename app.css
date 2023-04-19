@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#particle-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("assets/bg.jpg");
+}
+
+particle-el {
+    position: absolute;
+}
+
+#particle-wrapper img {
+    position: relative;
+    z-index: 10;
+}
+
+#loading-overlay {
+    position: fixed;
+    inset: 0 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(32, 32, 42);
+    z-index: 1000;
+    transition: opacity 4s ease-out;
+}
+
+#loading-overlay.fade {
+    opacity: 0;
+}
